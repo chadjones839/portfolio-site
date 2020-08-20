@@ -2,3 +2,155 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap";
 @import 'plugins.css';
 @import 'stylem.css';
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 35px 0px;
+	z-index: 11;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.navbar .inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .inner .logo img {max-width: 45%;}
+
+.navbar .inner .logo .dark {display: none;}
+
+.navbar .inner .menu ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+.navbar .inner .menu ul li {
+	margin: 0px 35px 0px 0px;
+	float: left;
+}
+
+.navbar .inner .menu ul li:last-child {margin-right: 0px;}
+
+.navbar .inner .menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.navbar.animate {
+	padding: 25px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+
+.navbar.animate .logo .dark {display: block;}
+
+.navbar.animate .logo .light {display: none;}
+
+.navbar.animate .menu ul li a {color: #000;}
+
+.navbar.animate .menu ul li a:hover {color: #c74410;}
+
+.navbar .inner .menu ul li a:hover {color: #c74410;}
+
+
+
+/*---------------------------------------------------*/
+/*	21) ARLO CLASSIC
+/*---------------------------------------------------*/
+
+body.classic .sidebar {display: none;}
+
+body.classic .rightpart {padding-left: 0px; width: 100%;}
+
+body.classic .about .rightbox .text {padding-top: 25px;}
+
+body.classic .about .about_inner {padding-top: 0px;}
+
+body.classic .title-holder {text-align: center;}
+
+body.classic .title-holder.about {text-align: left;}
+
+body.classic .skills .skill_inner ul li {text-align: center;}
+
+body.classic .portfolio .portfolio_filter {text-align: center;}
+
+body.classic .contact .contact_inner {text-align: center;}
+
+body.classic .contact .fields ul li input {text-align: center !important;}
+
+body.classic .contact .fields .last textarea {text-align: center !important;}
+
+body.classic .contact .empty_notice {text-align: center;}
+
+body.classic .contact .contact_error {text-align: center;}
+
+body.classic .contact .returnmessage {text-align: center;}
+
+
+.fff {
+	position:absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.hero_header .overlay.fff {background-color: rgba(0,0,0,0);}
+
+
+.headshot .image {
+	position: relative;
+	width: 110px;
+	height: 110px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+.headshot .image .main {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.headshot .image .main:before {
+	position: absolute;
+	content: "";
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	border-radius: 100%;
+	background-color:rgba(0,0,0,.15);
+	z-index: -1;
+}
+
+.headshot .title {
+	font-size: 22px;
+	font-weight: 600;
+}
+
