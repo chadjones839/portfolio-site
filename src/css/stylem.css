@@ -1639,5 +1639,6 @@ img.svg {
 
 @media (max-width: 480px)  {
 	.hero_header .hero_content .name_holder h3 {font-size: 35px;}
+	.timeline_inner {padding-left: 10px; padding-right: 10px;}
 
 }
