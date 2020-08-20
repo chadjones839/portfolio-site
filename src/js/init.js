@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
 
 	"use strict";
 
-
+	arlo_tm_bg_nav();
 	arlo_tm_popup();
 	arlo_tm_anchor();
 	arlo_tm_down();
@@ -24,6 +24,10 @@ jQuery(document).ready(function () {
 		arlo_tm_isotope();
 	});
 
+	jQuery(window).on('scroll', function () {
+		arlo_tm_bg_nav();
+	});
+
 	jQuery(window).load('body', function () {
 		setTimeout(function () {
 			jQuery('.preloader').addClass('loaded');
@@ -31,6 +35,21 @@ jQuery(document).ready(function () {
 	});
 
 });
+
+function arlo_tm_bg_nav() {
+	"use strict";
+
+	jQuery(window).on('scroll', function () {
+		var menu = jQuery('.navbar');
+		var WinOffset = jQuery(window).scrollTop();
+
+		if (WinOffset >= 150) {
+			menu.addClass('animate');
+		} else {
+			menu.removeClass('animate');
+		}
+	});
+}
 
 // -----------------------------------------------------
 // --------------------   POPUP    ---------------------
@@ -51,6 +70,20 @@ function arlo_tm_popup() {
 		});
 
 	});
+
+	jQuery('.gallery_zoom').each(function () { // the containers for all your galleries
+		jQuery(this).magnificPopup({
+			delegate: 'a.zoom', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			removalDelay: 300,
+			mainClass: 'mfp-fade'
+		});
+
+	});
+
 	jQuery('.popup-youtube').each(function () { // the containers for all your galleries
 		jQuery(this).magnificPopup({
 			disableOn: 700,
@@ -77,13 +110,25 @@ function arlo_tm_anchor() {
 
 	"use strict";
 
-	jQuery('.sidebar .inner .menu ul li a,.topbar .dropdown .dropdown_inner ul li a').off().on('click', function (e) {
+	jQuery('.topbar .dropdown .dropdown_inner ul li a').off().on('click', function (e) {
 		e.stopPropagation();
 		var element = jQuery(this);
 		var url = element.attr('href');
 		if (url !== '#' && url.charAt(0) === '#') {
 			$('html, body').animate({
 				scrollTop: $(url).offset().top
+			}, 1000);
+		}
+		return false;
+	});
+
+	jQuery('.navbar .inner .menu ul li a').off().on('click', function (e) {
+		e.stopPropagation();
+		var element = jQuery(this);
+		var url = element.attr('href');
+		if (url !== '#' && url.charAt(0) === '#') {
+			$('html, body').animate({
+				scrollTop: $(url).offset().top - 90
 			}, 1000);
 		}
 		return false;

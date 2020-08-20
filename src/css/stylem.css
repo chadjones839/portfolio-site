@@ -375,6 +375,11 @@ img.svg {
 	justify-content: space-between;
 }
 
+.topbar .topbar_in .logo img {
+	width: 45%;
+	height: auto;
+}
+
 .topbar .topbar_inner .trigger a {
 	text-decoration: none;
 	color: #000;
@@ -424,6 +429,30 @@ img.svg {
 	font-weight: 500;
 }
 
+.topbar .dropdown .dropdown_inner .mobile-social {
+	color: #000;
+	display: flex;
+	flex-direction: row;
+	padding-right: 15px;
+}
+
+.topbar .dropdown .dropdown_inner .mobile-social span  {
+	display: flex;
+	flex-direction: row;
+}
+
+.topbar .dropdown .dropdown_inner .mobile-social span a {
+	color: #000;
+	margin-top: 30px;
+	padding-right: 25px;
+}
+
+.topbar .dropdown .dropdown_inner .mobile-social span svg {
+	width: 25px;
+	height: 25px;
+}
+
+
 /*---------------------------------------------------*/
 /*	04) RIGHTPART
 /*---------------------------------------------------*/
@@ -433,7 +462,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-left: 400px;
+	/* padding-left: 400px; */
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -635,7 +664,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 138px;
+	padding-top: 80px;
 }
 
 .about {
@@ -848,7 +877,7 @@ img.svg {
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 140px 0px 100px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 .skills .skill_inner {
@@ -935,8 +964,8 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 100px;
-	padding-top: 140px;
+	margin-bottom: 80px;
+	padding-top: 40px;
 }
 
 .portfolio .portfolio_inner {
@@ -1135,7 +1164,14 @@ img.svg {
 .timeline .timeline_inner .left ul li .inner .company,
 .timeline .timeline_inner .right ul li .inner .company {
 	font-size: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	color: #c74410;
+}
+
+.timeline .timeline_inner .left ul li .inner .degree,
+.timeline .timeline_inner .right ul li .inner .degree {
+	font-size: 18px;
+	margin-bottom: 5px;
 	color: #c74410;
 }
 
@@ -1150,7 +1186,7 @@ img.svg {
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 140px 0px 150px 0px;
+	padding: 0px 0px 40px 0px;
 }
 
 .contact .contact_inner {
@@ -1412,7 +1448,7 @@ img.svg {
 
 .headshot .title span {color: #c74410;}
 
-.hero_header .container {height: 100%;z-index: 3;}
+.hero_header .container {height: 100%;}
 
 .arrow_wrap.extra {left: auto;}
 
@@ -1428,7 +1464,8 @@ img.svg {
 	color: #fff;
 	font-weight: 700;
 	font-size: 75px;
-	margin-bottom: 12px;
+	margin-top: 12px;
+	line-height: .9em;
 }
 
 .extra_hero_content .title span {color: #c74410;}
@@ -1437,7 +1474,17 @@ img.svg {
 	color: #fff;
 	opacity: .7;
 	margin-bottom: 35px;
+	margin-top: 20px;
 }
+
+.extra_hero_content .text span {
+	color: #c74410;
+	font-weight: 500;
+	opacity: 0.95;
+	margin-bottom: 35px;
+	margin-top: 20px;
+}
+
 
 .extra_hero_content .buttons_extra {
 	width: 100%;
@@ -1534,11 +1581,11 @@ img.svg {
 /*	13) MEDIA QUERIES
 /*---------------------------------------------------*/
 
-@media (max-width: 1600px)  {
+/* @media (max-width: 1600px)  {
 	.sidebar {width: 360px;}
 	.rightpart {padding-left: 360px;}
 	.sidebar .inner .menu ul li a {padding: 10px 0px;}
-}
+} */
 
 @media (max-width: 1400px)  {
 	.about {margin-bottom: 80px;}
@@ -1556,7 +1603,9 @@ img.svg {
 @media (max-width: 1040px)  {
 	.sidebar {display: none;}
 	.rightpart {padding-left: 0px;}
+	.extra_hero_content {padding-left: 10px; padding-right: 10px;}
 	.topbar {display: block;}
+	.navbar{display: none;}
 	.progress_wrap .progress_wrap_inner {flex-direction: column;}
 	.progress_wrap .progress_wrap_inner .left {padding-right: 0px;width: 100%;margin-bottom: 50px;}
 	.progress_wrap .right {padding-left: 0px;width: 100%;}
