@@ -154,3 +154,12 @@ body.classic .contact .returnmessage {text-align: center;}
 	font-weight: 600;
 }
 
+.announcement {
+  background: red;
+  text-align: center;
+}
+
+.announcement p {
+  color: white;
+  font-size: 14px;
+}

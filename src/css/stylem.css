@@ -380,6 +380,10 @@ img.svg {
 	height: auto;
 }
 
+.trigger {
+	padding-right: 10px;
+}
+
 .topbar .topbar_inner .trigger a {
 	text-decoration: none;
 	color: #000;
@@ -584,7 +588,7 @@ img.svg {
 	left: 50%;
 	bottom: 5%;
 	transform: translateX(-50%);
-	
+	padding: 10px;
 	z-index: 55;
 }
 
@@ -681,7 +685,7 @@ img.svg {
 	clear: both;
 	float: left;
 	display: flex;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .about .leftbox {
@@ -810,7 +814,7 @@ img.svg {
 }
 
 .about .buttons ul li {
-	margin: 0px 15px 20px 0px;
+	margin: 0px 15px 10px 0px;
 	display: inline-block;
 }
 
@@ -877,7 +881,7 @@ img.svg {
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 0px 0px 0px 0px;
+	padding: 50px 0px 0px 0px;
 }
 
 .skills .skill_inner {
@@ -885,7 +889,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 90px;
+	padding-top: 50px;
 }
 
 .skills .skill_inner ul {
@@ -1008,6 +1012,10 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
+	overflow: visible;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .portfolio .portfolio_list ul {
@@ -1018,7 +1026,7 @@ img.svg {
 .portfolio .portfolio_list ul li {
 	margin: 0px 0px 50px 0px;
 	float: left;
-	width: 33.3333%;
+	width: 30%;
 	padding-left: 50px;
 }
 
