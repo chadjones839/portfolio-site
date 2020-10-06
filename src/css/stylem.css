@@ -1108,6 +1108,7 @@ img.svg {
 .timeline .timeline_inner .right {
 	width: 50%;
 	padding-right: 50px;
+	margin-bottom: 50px;
 }
 
 .timeline .timeline_inner .left ul,
@@ -1194,7 +1195,7 @@ img.svg {
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 0px 0px 40px 0px;
+	padding: 50px 0px 20px 0px;
 }
 
 .contact .contact_inner {
@@ -1202,7 +1203,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 90px;
+	padding-top: 50px;
 }
 
 .contact .short_list {
@@ -1210,6 +1211,16 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
+}
+
+.contact-location,
+.contact-mail,
+.contact-phone {
+	text-decoration: none;
+	font-weight: 600;
+	color: #6f6f6f;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
 .contact .short_list ul {
@@ -1649,4 +1660,45 @@ img.svg {
 	.hero_header .hero_content .name_holder h3 {font-size: 35px;}
 	.timeline_inner {padding-left: 10px; padding-right: 10px;}
 
+}
+
+#techs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	z-index: 1;
+	padding-top: 50px;
+}
+
+.techs {
+	width: 125px;
+	height: auto;
+}
+
+.technos {
+	padding:0;
+}
+.tech {
+	margin: 0 40px 60px;
+}
+
+@media (max-width: 840px)  {
+	#techs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		z-index: 3;
+	}
+
+	.techs {
+		width: 100px;
+		height: auto;
+	}
+
+	.technos {
+		padding:0;
+	}
+	.tech {
+		margin: 0 0px 30px 0;
+	}
 }

@@ -384,8 +384,8 @@ function arlo_tm_portfolio() {
 	if (jQuery().isotope) {
 
 		// Needed variables
-		var list = jQuery('.arlo_tm_portfolio .portfolio_list ul');
-		var filter = jQuery('.arlo_tm_portfolio .portfolio_filter ul');
+		var list = jQuery('.portfolio .portfolio_list ul');
+		var filter = jQuery('.portfolio .portfolio_filter ul');
 
 		if (filter.length) {
 			// Isotope Filter 
